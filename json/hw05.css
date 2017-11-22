@@ -1,0 +1,139 @@
+body{
+	margin:30px 30px;
+	background-image:url(./pics/map/left.gif);background-repeat:repeat-y;
+	background-size:100%;
+	background-attachment:fixed;
+}
+
+a:link{color:blue}
+a:visited{color:purple}
+a:hover{color:red;}
+a:active{color:green}
+
+p.copyright{
+	position:absolute;
+	right:50px;
+	bottom:2%;
+	text-align:right;
+	font-size:15;
+	position:fixed;
+}
+p.accord{
+	color:gray;
+	position:absolute;
+	left:15%;
+	top:90%;
+	text-align:left;
+	font-size:10px;
+}
+p{
+	text-align:right;
+	color:white;
+	font-size:20;
+}
+p.season{
+	color: white;
+	text-align:center;
+}
+
+img.title{
+	position:absolute;
+	top:5%;
+	left:48%;
+	z-index:10;
+	height:30%;
+	margin: 0 auto;
+}
+div.season{
+	position:absolute;
+	top:70%;
+	left:15%;
+	width:40%;
+	height:20%;
+	background:rgba(0,0,0,0.4);
+	z-index:9;
+	text-align:center;
+	display:none;
+}
+div.left{
+	background:rgba(0,0,0,0.0);
+	position:absolute;
+	top:10%;
+	height:80%;
+	text-align:left;
+	left:55%;
+	width:35%;
+}
+div.option{
+	height:25%;
+	-webkit-perspective: 700;
+	-moz-perspective: 700;
+	perspective: 700;
+}
+div.center{
+	position:absolute;
+	top:10%;
+	height:80%;
+	left:15%;
+	width:40%;
+	background:rgba(0,0,0,0.0);
+}
+.container {
+  height:100%;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.front , .back {
+	transition: all 0.3s ease-in-out;
+  position: absolute;
+  right:0%;
+  top:0%;
+  -webkit-backface-visibility: hidden;
+}
+.back{
+  height:100%;width:100%;
+  background:rgba(0,0,0,0.2);
+  text-align:right;
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+}
+.container:hover {
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+}
+
+input[type='range'] {
+	-webkit-appearance: none;
+	border-radius: 5px;
+	box-shadow: inset 0 0 5px #333;
+	background-color: #999;
+	height: 5px;
+	vertical-align: middle;
+}
+input[type='range']::-moz-range-track {
+	-moz-appearance: none;
+	border-radius: 5px;
+	box-shadow: inset 0 0 5px #333;
+	background-color: #999;
+	height: 5px;
+}
+input[type='range']::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	border-radius: 20px;
+	background-color: #FFF;
+	box-shadow:inset 0 0 10px rgba(000,000,000,0.5);
+	border: 1px solid #999;
+	height: 20px;
+	width: 20px;
+}
+input[type='range']::-moz-range-thumb {
+	-moz-appearance: none;
+	border-radius: 20px;
+	background-color: #FFF;
+	box-shadow:inset 0 0 10px rgba(000,000,000,0.5);
+	border: 1px solid #999;
+	height: 20px;
+	width: 20px;
+}
